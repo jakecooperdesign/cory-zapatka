@@ -1,7 +1,7 @@
 ---
 title: Home Page
 Sidebar Links:
-  page: 
+  post: Post Three
 layout: default
 ---
 
