@@ -9,7 +9,6 @@ collections:
     title: Projects
     output: true
     permalink: "/projects/:path/"
-    layout: project
   uploads:
     title: Uploads
     output: true
