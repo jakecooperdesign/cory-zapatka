@@ -38,3 +38,12 @@ exclude:
 gems:
 - jekyll-feed
 - jekyll-sitemap
+defaults:
+  -
+    scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+      project_date: 
+      description: ""

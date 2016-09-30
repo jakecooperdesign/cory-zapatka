@@ -1,8 +1,11 @@
+---
+layout: default
+---
 <article class="project">
 	<div class="columns project-meta">
 		<div class="column is-small">
 			<p class="label is-marginless">Project Date</p>
-			<p>{{page.project_date}}</p>
+			<p>{{page.project_date | date: '%B, %Y'}}</p>
 		</div>
 		<div class="column">			
 			<header class="project-header">
@@ -14,7 +17,7 @@
 	<div class="columns project-nav">
 		<div class="column is-small">
 			<p class="label is-marginless">Project #</p>
-			<p>1/14</p>
+			<p>{{page.order}}/14</p>
 		</div>
 		<div class="column">
 			<ul class="is-unstyled">
@@ -23,7 +26,7 @@
 			</ul>
 		</div>
 	</div>
-	<div class="columns project-body">
+	<div class="columns project-body has-padding-top-small">
 		<div class="column is-offset-small">
 			{{ content }}
 		</div>
