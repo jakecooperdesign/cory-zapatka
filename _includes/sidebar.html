@@ -1,5 +1,5 @@
 {% assign projects = site.projects | sort: 'position' %}
-{% assign pages = site.pages | where: "is_sticky", "true" | sort: 'position' %}
+<!-- {% assign pages = site.pages | where: "is_sticky", "true" | sort: 'position' %} -->
 <aside class="sidebar">
 	<label class="toggle btn" for="menu-toggle">Menu +</label>
 	<input type="checkbox" name="menu-toggle" id="menu-toggle" class="toggle-input">
@@ -9,16 +9,16 @@
 				<h3 class="label is-marginless">Projects</h3>
 				<ul class="is-unstyled">
 					{% for project in projects %}
-						<li><a href="{{project.permalink}}">{{project.title}}</a></li>
+						<li><a href="{{project.url}}">{{project.title}}</a></li>
 					{% endfor %}
 				</ul>
 			</div>
 			<div class="list-group">
 				<h3 class="label is-marginless">More</h3>
 				<ul class="is-unstyled">
-					{% for page in pages %}
-						{% if page.permalink != "/" %}
-						<li><a href="{{page.permalink}}">{{page.title}}</a></li>
+					{% for page in site.pages %}
+						{% if page.url != "/" %}
+						<li><a href="{{page.url}}">{{page.title}}</a></li>
 						{% endif %}
 					{% endfor %}
 				</ul>
