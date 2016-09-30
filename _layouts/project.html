@@ -1,0 +1,31 @@
+<article class="project">
+	<div class="columns project-meta">
+		<div class="column is-small">
+			<p class="label is-marginless">Project Date</p>
+			<p>{{page.project_date}}</p>
+		</div>
+		<div class="column">			
+			<header class="project-header">
+				<h2 class="project-name is-marginless is-h3"><a href="{{page.permalink}}">{{page.title}}</a></h2>
+				<p class="project-description">{{page.description}}</p>
+			</header>
+		</div>
+	</div>
+	<div class="columns project-nav">
+		<div class="column is-small">
+			<p class="label is-marginless">Project #</p>
+			<p>1/14</p>
+		</div>
+		<div class="column">
+			<ul class="is-unstyled">
+				<li><a href="#">Next Project:</a> &rarr; we are human</li>
+				<li><a href="#">Previous Project:</a> &larr; transferwise</li>
+			</ul>
+		</div>
+	</div>
+	<div class="columns project-body">
+		<div class="column is-offset-small">
+			{{ content }}
+		</div>
+	</div>
+</article>
