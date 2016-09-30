@@ -6,7 +6,11 @@
 	<body>
 		<div class="container">
 			<header class="site__footer has-padding-top has-padding-bottom-small has-border-bottom has-margin-bottom">
-				<h1 class="site__title is-marginless"><a class="link-clean" href="/">{{site.title}}</a> <small class="label is-inline">{{site.description}}</small></h1>
+				{% if page.url == "/" %}
+					<h1 class="site__title is-h1 is-marginless"><a class="link-clean" href="/">{{site.title}}</a> <small class="label is-inline">{{site.description}}</small></h1>
+				{% else %}
+					<h2 class="site__title is-h1 is-marginless"><a class="link-clean" href="/">{{site.title}}</a> <small class="label is-inline">{{site.description}}</small></h2>
+				{% endif %}
 			</header>
 			<section class="columns">
 				<div class="column is-2">
