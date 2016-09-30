@@ -1,5 +1,5 @@
 ---
-title: Cory Zapatka
+title: Index
 permalink: "/"
 layout: default
 ---
