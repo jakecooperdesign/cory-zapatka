@@ -1,5 +1,5 @@
 {% assign projects = site.projects | sort: 'position' %}
-{% assign pages = site.pages | sort:'position' %}
+{% assign pages = site.pages | where: "is_sticky", "true" | sort: 'position' %}
 <aside class="sidebar">
 	<label class="toggle btn" for="menu-toggle">Menu +</label>
 	<input type="checkbox" name="menu-toggle" id="menu-toggle" class="toggle-input">
