@@ -12,8 +12,8 @@ layout: default
 		</div>
 		<div class="column">			
 			<header class="project-header">
-				<h1 class="project-name is-marginless is-h3"><a href="{{page.permalink}}">{{page.title}}</a></h1>
-				<p class="project-description">{{page.description}}</p>
+				<h1 class="project-name is-marginless is-h3"><a href="{{page.permalink}}" class="link-clean">{{page.title}}</a></h1>
+				<div class="project-description">{{page.description | markdownify}}</div>
 			</header>
 		</div>
 	</div>
