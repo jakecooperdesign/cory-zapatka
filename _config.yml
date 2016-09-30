@@ -17,6 +17,7 @@ description: Offline Editor
 footer: Cory Zapatka &copy; 2016
 baseurl: ''
 url: http://coryzapatka.com
+permalink: /:path/
 markdown: kramdown
 kramdown:
   input: GFM
