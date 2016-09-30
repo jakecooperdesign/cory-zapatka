@@ -1,7 +1,6 @@
 ---
 title: About
 date: 2016-09-30 17:26:00 Z
-permalink: "/:title/"
 ---
 
 ![headshot-cory-zapatka.jpg](/uploads/headshot-cory-zapatka.jpg)
