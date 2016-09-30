@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+{% assign posts = paginator.posts %}
+<section class="blog-posts">
+	{% for post in posts %}
+	<article class="post has-margin-bottom has-padding-bottom has-border-bottom">
+		<div class="columns">
+			<div class="column is-small">
+				<p class="label">date</p>
+				<p>{{post.date | date: "%m/%d/%y"}}</p>
+			</div>
+			<div class="column">
+				<p class="label">{{post.categories | join: ", "}}</p>
+				<h2 class="post-title"><a href="{{post.url}}" class="link-clean">{{post.title}}</a></h2>
+				<div>{{post.excerpt}}</div>
+			</div>
+		</div>
+	</article>
+	{% endfor %}
+	{% if paginator.previous_page %}
+		<a href="{{paginator.previous_page_path}}">Previous</a>
+	{% endif %}
+	{% if paginator.next_page %}
+		<a href="{{paginator.next_page_path}}">Next</a>
+	{% endif %}
+</section>
