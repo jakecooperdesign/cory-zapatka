@@ -1,0 +1,16 @@
+.project
+	+mobile
+		display: flex
+		flex-direction: column
+
+		.project-nav
+			order: 3
+
+.project .column.is-offset-small
+	+desktop
+		margin-left: 18%;
+
+.project .column.is-small
+	+desktop
+		flex: none;
+		width: 18%;

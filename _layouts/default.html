@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	{% include head.html %}
+	<body>
+		<div class="container">
+			<header class="site__footer has-padding-top has-padding-bottom-small has-border-bottom has-margin-bottom">
+				<h1 class="site__title is-marginless">{{site.title}} <small class="label is-inline">{{site.description}}</small></h1>
+			</header>
+			<section class="columns">
+				<div class="column is-2">
+					{% include sidebar.html %}
+				</div>
+				<div class="column">
+					<main>
+						{% include project.html %}
+					</main>
+				</div>
+			</section>
+			<footer class="site__footer has-padding-vert has-text-right">
+				{{site.footer}}
+			</footer>
+		</div>
+	</body>
+</html>

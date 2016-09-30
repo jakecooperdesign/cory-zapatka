@@ -1,0 +1,16 @@
+.toggle
+	display: none
+	cursor: pointer
+
+.toggle-input
+	display: none
+
++mobile
+	.toggle
+		display: inline-block;
+		margin-bottom: 2em
+	.toggle-group
+		display: none
+
+	.toggle-input:checked + .toggle-group
+		display: block
