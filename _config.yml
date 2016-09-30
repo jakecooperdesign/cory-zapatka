@@ -12,6 +12,14 @@ collections:
   uploads:
     title: Uploads
     output: true
+defaults:
+- scope:
+    path: ''
+    type: projects
+  values:
+    layout: project
+    project_date: 
+    description: ''
 email: czapatka@gmail.com
 description: Offline Editor
 footer: Cory Zapatka &copy; 2016
@@ -38,12 +46,3 @@ exclude:
 gems:
 - jekyll-feed
 - jekyll-sitemap
-defaults:
-  -
-    scope:
-      path: ""
-      type: "projects"
-    values:
-      layout: "project"
-      project_date: 
-      description: ""
