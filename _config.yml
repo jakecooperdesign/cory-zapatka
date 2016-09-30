@@ -56,4 +56,3 @@ gems:
 - jekyll-feed
 - jekyll-sitemap
 - octopress-paginate
-has_blog: true
