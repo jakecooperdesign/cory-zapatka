@@ -28,7 +28,7 @@ defaults:
 email: czapatka@gmail.com
 description: Offline Editor
 footer: Cory Zapatka &copy; 2016
-baseurl: ''
+baseurl: 
 url: http://coryzapatka.com
 permalink: "/:path/"
 markdown: kramdown
@@ -39,7 +39,7 @@ include:
 - _pages
 sass:
   sass_dir: assets/sass
-  style: :compressed
+  style: compressed
 exclude:
 - Gemfile
 - Gemfile.lock
@@ -51,3 +51,4 @@ exclude:
 gems:
 - jekyll-feed
 - jekyll-sitemap
+has_blog: true
