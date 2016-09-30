@@ -1,6 +1,5 @@
 ---
 title: Cory Zapatka
-published: false
 layout: default
 ---
 

@@ -1,7 +1,8 @@
 ---
 layout: default
 ---
-
+{% assign projects = site.projects | sort: 'position' %}
+{% assign pages = site.pages | sort:'position' %}
 <article class="project">
 	<div class="columns project-meta">
 		<div class="column is-small">
@@ -18,12 +19,21 @@ layout: default
 	<div class="columns project-nav">
 		<div class="column is-small">
 			<p class="label is-marginless">Project #</p>
-			<p>01/{{site.projects | size}}</p>
+			{% assign projects_size = projects | size %}
+			<p>{{page.position | plus: 1}}/{{projects_size}}</p>
 		</div>
 		<div class="column">
 			<ul class="is-unstyled">
-				<li><a href="#">Next Project:</a> &rarr; we are human</li>
-				<li><a href="#">Previous Project:</a> &larr; transferwise</li>
+				{% assign next = page.position | plus: 1 %}
+				{% assign next_project = site.projects[next] %}
+				{% assign previous = page.position | minus: 1 %}
+				{% assign previous_project = site.projects[previous] %}
+				{% if next_project.title %}
+					<li><a href="{{site.projects[next].url}}">Next Project:</a> &rarr; {{site.projects[next].title}}</li>
+				{% endif %}
+				{% if page.position != 0 %}
+					<li><a href="{{site.projects[previous].url}}">Previous Project:</a> &larr; {{site.projects[previous].title}}</li>
+				{% endif %}
 			</ul>
 		</div>
 	</div>

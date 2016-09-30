@@ -1,5 +1,5 @@
-{% assign projects = site.projects %}
-{% assign pages = site.pages %}
+{% assign projects = site.projects | sort: 'position' %}
+{% assign pages = site.pages | sort:'position' %}
 <aside class="sidebar">
 	<label class="toggle btn" for="menu-toggle">Menu +</label>
 	<input type="checkbox" name="menu-toggle" id="menu-toggle" class="toggle-input">
@@ -17,7 +17,9 @@
 				<h3 class="label is-marginless">More</h3>
 				<ul class="is-unstyled">
 					{% for page in pages %}
+						{% if page.url != "/" %}
 						<li><a href="{{page.url}}">{{page.title}}</a></li>
+						{% endif %}
 					{% endfor %}
 				</ul>
 			</div>
