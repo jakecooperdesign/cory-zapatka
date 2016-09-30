@@ -6,6 +6,6 @@ layout: blog
 paginate:
   collection: posts
   per_page: 2
-  permalink: /:num/
+  permalink: "/:num/"
 ---
 

@@ -25,13 +25,13 @@ defaults:
     type: pages
   values:
     layout: page
-    permalink: /:path/
+    permalink: "/:path/"
 - scope:
     path: ''
     type: posts
   values:
     layout: post
-    permalink: /blog/:path/
+    permalink: "/blog/:path/"
 email: czapatka@gmail.com
 description: Offline Editor
 footer: Cory Zapatka &copy; 2016
