@@ -35,8 +35,7 @@ defaults:
 email: czapatka@gmail.com
 description: Offline Editor
 footer: Cory Zapatka &copy; 2016
-baseurl: 
-url: http://coryzapatka.com
+baseurl: /cory-zapatka
 permalink: "/:path/"
 markdown: kramdown
 kramdown:

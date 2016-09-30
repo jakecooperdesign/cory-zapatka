@@ -12,7 +12,7 @@ layout: default
 		</div>
 		<div class="column">			
 			<header class="project-header">
-				<h1 class="project-name is-marginless is-h3"><a href="{{page.permalink}}" class="link-clean">{{page.title}}</a></h1>
+				<h1 class="project-name is-marginless is-h3"><a href="{{site.baseurl}}{{page.permalink}}" class="link-clean">{{page.title}}</a></h1>
 				<div class="project-description">{{page.description | markdownify}}</div>
 			</header>
 		</div>
@@ -26,14 +26,16 @@ layout: default
 		<div class="column">
 			<ul class="is-unstyled">
 				{% assign next = page.position | plus: 1 %}
-				{% assign next_project = site.projects[next] %}
+				{% assign next_project = site.projects | where:"position",next | first %}
+
 				{% assign previous = page.position | minus: 1 %}
-				{% assign previous_project = site.projects[previous] %}
+				{% assign previous_project = site.projects | where:"position",previous | first %}
+
 				{% if next_project.title %}
-					<li><a href="{{site.projects[next].url}}">Next Project:</a> &rarr; {{site.projects[next].title}}</li>
+					<li><a href="{{next_project.url | prepend: site.baseurl }}">Next Project:</a> &rarr; {{next_project.title}}</li>
 				{% endif %}
-				{% if page.position != 0 %}
-					<li><a href="{{site.projects[previous].url}}">Previous Project:</a> &larr; {{site.projects[previous].title}}</li>
+				{% if page.position != 0 and page.title %}
+					<li><a href="{{previous_project.url | prepend: site.baseurl }}">Previous Project:</a> &larr; {{previous_project.title}}</li>
 				{% endif %}
 			</ul>
 		</div>
