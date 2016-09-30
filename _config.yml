@@ -43,4 +43,4 @@ defaults:
       path: ""
       type: "pages"
     values:
-      permalink: "/:path"
+      permalink: ":path"
