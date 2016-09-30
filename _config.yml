@@ -25,7 +25,7 @@ defaults:
     type: pages
   values:
     layout: page
-    permalink: "/:path/"
+    is_sticky: true
 - scope:
     path: ''
     type: posts
