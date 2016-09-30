@@ -14,3 +14,19 @@
 
 	.toggle-input:checked + .toggle-group
 		display: block
+
+.column.is-offset-small
+	+desktop
+		margin-left: 18%;
+
+.column.is-small
+	+desktop
+		flex: none;
+		width: 18%;
+
+.link-clean
+	text-decoration: none
+	color: inherit
+
+	&:hover 
+		text-decoration: underline

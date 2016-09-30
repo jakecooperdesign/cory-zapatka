@@ -20,6 +20,11 @@ defaults:
     layout: project
     project_date: 
     description: ''
+- scope:
+    path: ''
+    type: pages
+  values:
+    layout: page
 email: czapatka@gmail.com
 description: Offline Editor
 footer: Cory Zapatka &copy; 2016

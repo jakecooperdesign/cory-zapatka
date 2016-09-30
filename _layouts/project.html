@@ -6,7 +6,7 @@ layout: default
 	<div class="columns project-meta">
 		<div class="column is-small">
 			<p class="label is-marginless">Project Date</p>
-			<p>{{page.project_date | date: '%B, %Y'}}</p>
+			<p>{{page.project_date | date: '%B, %Y' | default: "N/A"}}</p>
 		</div>
 		<div class="column">			
 			<header class="project-header">
@@ -18,7 +18,7 @@ layout: default
 	<div class="columns project-nav">
 		<div class="column is-small">
 			<p class="label is-marginless">Project #</p>
-			<p>{{page.order}}/14</p>
+			<p>01/{{site.projects | size}}</p>
 		</div>
 		<div class="column">
 			<ul class="is-unstyled">
