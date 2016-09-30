@@ -25,7 +25,7 @@ defaults:
     type: pages
   values:
     layout: page
-    permalink: /:title/
+    permalink: /:path/
 - scope:
     path: ''
     type: posts
@@ -35,18 +35,16 @@ defaults:
 email: czapatka@gmail.com
 description: Offline Editor
 footer: Cory Zapatka &copy; 2016
-baseurl: ''
+baseurl: 
 url: http://coryzapatka.com
 permalink: "/:path/"
 markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
-include:
-- _pages
 sass:
   sass_dir: assets/sass
-  style: :compressed
+  style: compressed
 exclude:
 - Gemfile
 - Gemfile.lock
@@ -59,3 +57,4 @@ gems:
 - jekyll-feed
 - jekyll-sitemap
 - octopress-paginate
+has_blog: true
