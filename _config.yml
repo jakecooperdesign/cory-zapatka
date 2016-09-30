@@ -33,7 +33,7 @@ defaults:
     layout: post
     permalink: "/blog/:path/"
 email: czapatka@gmail.com
-description: Offline Editor
+description: Offline&nbsp;Editor
 footer: Cory Zapatka &copy; 2016
 baseurl: "/cory-zapatka"
 permalink: "/:path/"
