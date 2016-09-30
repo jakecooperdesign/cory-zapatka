@@ -1,6 +1,7 @@
 ---
 title: Index
 permalink: "/"
+position: 0
 layout: default
 ---
 
