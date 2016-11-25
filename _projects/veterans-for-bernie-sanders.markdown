@@ -9,7 +9,7 @@ tags:
 - sanders
 - political
 - propaganda
-position: 5
+position: 6
 project_date: 2016-04-01 00:00:00 Z
 description: 'Longform. Released for the April 2016 primary. '
 ---
