@@ -2,6 +2,7 @@
 title: Index
 permalink: "/"
 position: 0
+is_sticky: true
 layout: default
 ---
 
